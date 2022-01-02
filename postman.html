@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Postman Clone</title>
+    <link rel="stylesheet" href="postman.css">
+    <link rel="stylesheet" href="prism.css">
+</head>
+<body>
+    <div id="heading">
+        Postman Clone For GET And POST Requests
+    </div>
+    <div id="main">
+        <div class="commonsets" id="url">
+            <div class="margin margin2">
+                <label for="urlbox">URL:</label>
+                <input type="text" id="urlbox" placeholder="please enter a valid url">
+            </div>
+        </div>
+        <fieldset class="commonsets" id="requestradio">
+            <div class="margin" id="requestques">
+                Select the Request Type:
+            </div>
+            <div id="requestans">
+                <div id="opt1">
+                    GET <input type="radio" id="get" value="GET" name="requestType">
+                </div>
+                <div id="opt2">
+                    POST <input type="radio" id="post" value="POST" name="requestType">
+                </div>
+            </div>
+        </fieldset>
+        <fieldset class="commonsets" id="dataForPost">
+            <div class="margin" id="postques">
+                Select the Content Type For Post Request:
+            </div>
+            <div id="requestans2">
+                <div id="postAns1">
+                    JSON <input type="radio" id="json" value="JSON" name="posttype">
+                </div>
+                <div id="postAns2">
+                    Custom Parameters <input type="radio" id="custom" value="custom" name="posttype">
+                </div>
+            </div>
+        </fieldset>
+        <div class="commonsets" id="takejson">
+            <div class="margin" id="command1">
+                Enter the Request JSON:
+            </div>
+            <div id="textarea1">
+                <textarea name="jsonInfo" id="jsonInfo" placeholder="please enter a valid json"></textarea>
+            </div>
+        </div>
+        <div class="commonsets" id="customparams">
+            <div class="margin" id="command2">
+                Enter the Custom Parameters:
+            </div>
+            <div id="params">
+                <input type="text" id="key0" class="key" placeholder="key">
+                <input type="text" id="value0" class="value" placeholder="value">
+                <button id="button" class="button">+</button>
+                <div id="addedelems">
+                    <!-- <div id="addedBtns">
+                        <input type="text" class="key" placeholder="key">
+                        <input type="text" class="value" placeholder="value"> 
+                        <button class="button event">-</button> 
+                    </div> -->
+                </div>
+            </div>
+        </div>
+        <div class="commonsets" id="submitbtn">
+            <div class="margin">
+                <button id="submit">Get the Response</button>
+            </div>
+            <div>
+                <button id="reset">Reset the Fields</button>
+            </div>
+        </div>
+        <div class="commonsets" id="responseBox">
+            <div class="margin" id="response">
+                Response:
+            </div>
+            <div id="container">
+                <pre id="pre" class="language-javascript"><code id="code"class="language-javascript">The response will be visible here</code></pre>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        Postman Clone &copy; 2045 | All Rights Reserved
+    </div>
+    <script src="prism.js"></script>
+    <script src="postman.js"></script>
+</body>
+</html>

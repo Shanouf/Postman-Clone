@@ -1,0 +1,2 @@
+use the below url to check if the get/post requests are working fine
+https://jsonplaceholder.typicode.com/posts
